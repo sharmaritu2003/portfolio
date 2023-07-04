@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+* {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+body {
+  background: black;
+  color: white;
+}
+/* navigation bar */
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+}
+.navigation{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar .menu{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navbar .logo a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: aliceblue;
+  text-decoration: none;
+}
+.navbar .navigation .menu a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: aliceblue;
+  text-decoration: none;
+}
+.contactbts a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: aliceblue;
+  color: black;
+  padding: .5rem 1.2rem;
+  border-radius: 50px;
+  transition: .5s;
+}  
+.contactbts a:hover{
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  color: aliceblue;
+}
+/* .max-width {
+  padding: 0 80px;
+  margin: auto;
+  max-width: 1300px;
+} */
+.navbar .menu li a:hover {
+  color: rgb(91, 104, 223);
+}
+
+/* home section */
+.home {
+  height: 100vh;
+  display: flex;
+  min-height: 500px;
+  font-family: script bold;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.home .max-width {
+  margin: auto;
+}
+.home .home-content{
+  text-align: center;
+}
+.home .home-content .text1 {
+  font-size: 2rem;
+}
+.home .home-content .text2 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-left: -3px;
+}
+.home .home-content .text3 {
+  font-size: 2.5rem;
+}
+.home .home-content .text3 span {
+  font-weight: 500;
+  color: blue;
+}
+.home .home-content .button {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 5rem;
+  padding: 1rem 2.5rem;
+  background-color: aliceblue;
+  border-radius: 50px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+.home .home-content .button:hover {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  color: aliceblue;
+}
+
+/* About Section */
+.about{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.about .title {
+  text-align: center;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.about .column-left img{
+  width: 200px;
+}
+.about .column-right{
+  font-size: 1.5rem;
+}
+.about .text {
+  text-align: justify;
+}
+
+/* Services section */
+.services{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.smart{
+  width: 100%;
+  background: #303639;
+  padding: 2rem;
+  margin: 20px;
+  border-radius: 5px;
+}
+.smarttitle{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 250px;
+  margin: auto;
+}
+.smarttitle h2{
+  font-size: 2rem;
+}
+.smarttitle .iconic{
+  font-size: 1.5rem;
+}
+.smart p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.serv-content {
+  font-weight: 500;
+  display: flex;
+}
+.iconic {
+  font-size: 34px;
+  color: red;
+}
+.smart:hover {
+  background-color: #673c3c;
+  transition: all 0.3s;
+}
+
+/* skills section */
+.skills{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.bars {
+  margin-bottom: 20px;
+}
+.bars .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info span {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.bars progress{
+  width: 100%;
+  border-radius: 10px;
+}
+progress{
+  width: -webkit-fill-available;
+  background:green;height:10px;
+}
+
+/* contact section */
+.contact{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.contactbox{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.contactname{
+  display: flex;
+  width: 100%;
+}
+.contact-det{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contact-info{
+  display: flex;
+  padding: 1rem;
+}
+.contact-info .icon{
+  color: red;
+  padding-right: 1rem;
+}
+.contact-info .text h3{
+  padding-bottom: .5rem;
+}
+.contact-form h2{
+  padding-bottom: 1rem;
+}
+.contact-form .inputboxi{
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin: o auto;
+  width: 300px;
+}
+.contact-form .inputboxi input{
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+.contact-form .inputboxi textarea{
+  padding: .5rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 580px;
+}
+.contact-form .inputbox input{
+  padding: .5rem 1.5rem;
+  margin-top: .5rem;
+  border-radius: 5px;
+}
+
+/* footer section */
+.footer{
+  position: sticky;
+  top: 100%;
+  border-top: 2px solid white;
+  font-weight: bold;
+  padding: 0 1rem;
+} 
+.footerArea{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--con);
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.different-icon ul{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1rem;
+  color: aliceblue;
+}
+.different-icon ul a{
+  color: aliceblue;
+}
+
+section {
+  padding: 20px 0;
+}
+h2.title {
+  text-align: center;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .contact{
+    max-width: 1000px;
+  }
+  .serv-content {
+    flex-wrap: wrap;
+  }
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1000px) {
+  .contactbox{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-det{
+    margin-top: 1rem;
+    flex-direction: row;
+  }
+  .max-width {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar .menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: auto;
+    background-color: #303639;
+    padding: 0.5rem 2rem;
+  }
+  .navbar .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 650px) {
+  .about .about-content{
+    flex-direction: column;
+  }
+  .footerArea{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerArea p{
+    margin-bottom: 1rem;
+  }
+  .contactname{
+    flex-direction: column;
+  }
+  .contact-form .inputboxi textarea{
+    width: 400px;
+  }
+  .contact-det{
+    flex-wrap: wrap;
+  }
+  .contact-form .inputboxi{
+    width: 420px;
+  }
+  .navbar .navigation .menu a {
+    font-size: 1.1rem;
+  } 
+}
+@media (max-width: 450px) {
+  .contact-form .inputboxi textarea{
+    width: 320px;
+  }
+  .contact-form .inputboxi{
+    width: 320px;
+    margin-right: 0rem;
+  }
+  .contact-form .inputboxi input{
+    width: 320px;
+    margin-right: 0rem;
+  }
+  .home .home-content .text1 {
+    font-size: 1.2rem;
+  }
+  .home .home-content .text2 {
+    font-size: 4rem;
+  }
+  .home .home-content .text3 {
+    font-size: 1.5rem;
+  }
+  .smarttitle h2{
+    font-size: 1.5rem;
+  }
+  .smarttitle .iconic{
+    font-size: 1.5rem;
+  }
+  .smart{
+    margin: 20px 10px;
+  }
+  .smart p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .max-width {
+    padding: 0 5px;
+  }
+  .contactbox{
+    padding: 1rem;
+  }
+  .about .text{
+    font-size: 1.2rem;
+  }
+  h2.title{
+    font-size: 2rem;
+  }
+  .about .title{
+    font-size: 2rem;
+  }
+  .home .home-content .button{
+    padding: 1rem 2rem;
+  }
+  .navbar .navigation .menu a {
+    font-size: 1rem;
+  } 
+}
+@media (max-width: 375px) {
+  .home .home-content .text1 {
+    font-size: 1rem;
+  }
+  .home .home-content .text2 {
+    font-size: 3.5rem;
+  }
+  .home .home-content .text3 {
+    font-size: 1.3rem;
+  }
+  .smart{
+    margin: 15px 5px;
+  }
+}
